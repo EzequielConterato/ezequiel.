@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor-preto: black;
+    --cor-branco: #fefefe;
+    --cor-azul: red;
+    --cor-azulclaro: #22D4FD;
+
+
+
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+body {
+    
+  
+    box-sizing: border-box;
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+}
+    /* #4717f6 cor botão*/
+.strong__titulo {
+    color: var(--cor-azulclaro);
+}
+
+.cabecalho {
+    padding: 2% 10%;
+ 
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 5rem;
+}
+
+.cabecalho__menu__link {
+    font-family: "mont-serrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-azulclaro);
+    text-decoration: none;
+
+}
+
+
+
+.apresentacao {
+    padding: 8% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  
+    
+}
+
+.h1 {
+    font-size: 2.25rem;
+    font-family: "krona one", sans-serif;
+}
+
+.p {
+    font-size: 1.5rem;
+    font-family: "monet-serrat", sans-serif;
+    
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0% 9% 5%;
+}
+
+.link__rede {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    font-size: 1.5rem;
+    font-family: "monet-serrat", sans-serif;
+    font-weight: 600;    
+    width: 35%;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 3% 30%;
+    text-decoration: none;
+    color: var(--cor-branco);
+    background-color: var(--cor-preto);
+    border: 0.125rem solid var(--cor-azul);
+}
+.h2 {
+    font-family: "krona one", sans-serif;
+    font-weight: 300;
+}
+
+.link__rede:hover {
+    background-color: var(--cor-azul);
+}
+
+
+.footer {
+    background-color: var(--cor-azulclaro);
+    color: var(--cor-preto);
+    font-family: "mount-serrat", sans-serif;
+    font-size: 1.5rem;
+    padding: 1%;
+    text-align: center;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-azul);
+}
+
+
+
+
+
+
+
+@media (max-width: 749px) {
+
+    .apresentacao {
+        flex-direction: column;
+    }
+    .section {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .h1 {
+        font-size: 1.4rem;
+        font-family: "krona one", sans-serif;
+    }
+    .p {
+        font-size: 1.3rem;
+    }
+
+
+
+}
